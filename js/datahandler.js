@@ -1,9 +1,9 @@
 //Returns data from pflanzen.json
 function getData() {
-    
+
     let resolvePromise = new Promise(
         function (resolve, reject) {
-            
+
             let xhttp = new XMLHttpRequest(),
                 method = "GET",
                 url = "pflanzen.json";
@@ -13,8 +13,7 @@ function getData() {
                     console.log(this.readyState, this.status);
                     let plants = JSON.parse(xhttp.responseText);
                     resolve(plants);
-
-                } 
+                }
             }
             xhttp.send();
         }
@@ -23,4 +22,3 @@ function getData() {
     return resolvePromise;
 
 }
-
