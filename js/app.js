@@ -1,5 +1,5 @@
 function main(){
-    console.log('test');
+    
   var promise = getData();
 
   promise.then(function (data){
@@ -9,5 +9,4 @@ function main(){
       console.log('error', error);
   });
 }
-console.log('test');
 main();

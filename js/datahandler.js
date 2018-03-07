@@ -10,10 +10,11 @@ function getData() {
             xhttp.open(method, url, true);
             xhttp.onreadystatechange = function () {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
-                    resolve(xhttp.responseText);
-                } else {
-                    reject('Error');
-                }
+                    console.log(this.readyState, this.status);
+                    let plants = JSON.parse(xhttp.responseText);
+                    resolve(plants);
+
+                } 
             }
             xhttp.send();
         }
@@ -22,3 +23,4 @@ function getData() {
     return resolvePromise;
 
 }
+
