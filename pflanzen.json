@@ -1,0 +1,17 @@
+[
+    {
+        "familie":"Gänseblümchen",
+        "haltung":"innen",
+        "bewässerungProWoche":3
+    },
+    {
+        "familie":"avocado", 
+        "haltung":"außen", 
+        "bewässerungProWoche":2
+    },
+    {
+        "familie":"avocado", 
+        "haltung":"innen", 
+        "bewässerungProWoche":42
+    }
+]
