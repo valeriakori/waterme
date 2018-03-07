@@ -28,7 +28,7 @@ function drawData(plants, tableContainerId){
   var currentTextNode;
 
   for (let index in plants){
-    console.log(plants[index]);
+    console.log('Plant:', plants[index]);
     currentPlant = plants[index];
     currentPlantEntry = document.createElement('TR');
     currentPlantTR = tableNode.appendChild(currentPlantEntry);
