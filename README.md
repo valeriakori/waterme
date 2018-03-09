@@ -1,6 +1,6 @@
 # WaterMe
 ## Description
- Plants tend to be thirsty, but the poor programmer doesnt know how to handle them.
+ Plants tend to be thirsty, but the poor programmer doesn't know how to handle them.
  Some seem to drown to easy, some seem to dry out after one week. Or was it a month?
 
  This Application helps handling this issues, while serves as a nice little exercise App.
