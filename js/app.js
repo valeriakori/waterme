@@ -1,5 +1,5 @@
 function main(){
-  var promise = getData('2');
+  var promise = getData('api');
 
   promise.then(function (data){
       var tableContainer = document.getElementById('tableContainer');

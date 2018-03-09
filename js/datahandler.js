@@ -1,12 +1,13 @@
 //Returns data from pflanzen.json
 function getData(backendurl) {
 
-    let resolvePromise = new Promise(
+    let promise = new Promise(
         function (resolve, reject) {
 
             let xhttp = new XMLHttpRequest(),
                 method = "GET",
-                url = backendurl + 'pflanzen.json';
+                url = backendurl + '/pflanzen.json';
+
             xhttp.open(method, url, true);
             xhttp.onreadystatechange = function () {
                 if (xhttp.readyState == 4 ) {
@@ -16,12 +17,11 @@ function getData(backendurl) {
                   } else {
                     reject("Server answered with: " + xhttp.status);
                   }
-
                 }
             }
             xhttp.send();
         }
     );
-    return resolvePromise;
+    return promise;
 
 }
