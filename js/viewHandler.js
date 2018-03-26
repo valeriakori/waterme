@@ -16,15 +16,13 @@ function initTable(tableNode){
 }
 
 function addTHToTable(headerText, tableNode ){
-
   var tableHeaderTH = document.createElement("TH");
   tableHeaderTH.appendChild(document.createTextNode(headerText));
   tableNode.appendChild(tableHeaderTH);
-
 }
 
 function addTRToTable(FamilyText, WateringText, KeepingText, tableNode){
-
+  console.log(FamilyText, WateringText, KeepingText, tableNode);
   var TRNode = document.createElement('TR');
   TRNode = tableNode.appendChild(TRNode);
 
