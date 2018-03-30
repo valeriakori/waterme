@@ -5,14 +5,14 @@ function drawData(plants, tableContainer){
   initTable(tableNode);
 
   for (let index in plants){
-    addTRToTable(plants[index].family, plants[index].wateringPerWeek, plants[index].keeping, tableNode);
+    addTRToTable(plants[index].familie, plants[index].bewaesserung, plants[index].haltung, tableNode);
   }
 }
 
 function initTable(tableNode){
-  addTHToTable("Family", tableNode);
-  addTHToTable("Watering", tableNode);
-  addTHToTable("Keeping", tableNode);
+  addTHToTable("Familie", tableNode);
+  addTHToTable("Beässerung", tableNode);
+  addTHToTable("Haltung", tableNode);
 }
 
 function addTHToTable(headerText, tableNode ){

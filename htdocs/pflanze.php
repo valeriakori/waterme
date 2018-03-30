@@ -1,7 +1,7 @@
 <?php
 
 $plants;
-$url = "localhost:3306";
+$url = "localhost:8080";
 $user = "root";
 $pw = "";
 $dbName = "test";
