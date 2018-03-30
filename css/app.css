@@ -1,3 +1,27 @@
 body {
-    background-color: #00cae4;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #CDA34F;
+}
+
+#tableContainer {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tableContainer td, th {
+    border: 1px solid #373F27;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #636B46;
+    color: #E9E7DA;
 }
