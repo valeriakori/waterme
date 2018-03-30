@@ -26,9 +26,9 @@ function addTRToTable(FamilyText, WateringText, KeepingText, tableNode){
   var TRNode = document.createElement('TR');
   TRNode = tableNode.appendChild(TRNode);
 
+  addTDToTR(FamilyText, TRNode);
   addTDToTR(WateringText, TRNode);
   addTDToTR(KeepingText, TRNode);
-  addTDToTR(FamilyText, TRNode);
 
   tableNode.appendChild(TRNode);
 }
