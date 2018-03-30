@@ -1,11 +1,19 @@
 body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-image: url("../img/background.png");
     background-color: #CDA34F;
+    margin:0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
 }
 
 #tableContainer {
     border-collapse: collapse;
     width: 100%;
+    display:flex;
+    justify-content: center;
 }
 
 #tableContainer td, th {
@@ -13,8 +21,8 @@ body {
     padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
-tr:nth-child(odd){background-color: #f2f2f2;}
+tr:nth-child(even){background-color: #E9E7DA;}
+tr:nth-child(odd){background-color: #E9E7DA;}
 
 tr:hover {background-color: #ddd;}
 
